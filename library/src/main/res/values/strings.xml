@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HOK</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 日历开始 -->
+    <string name="time_next">Next</string>
+    <string name="time_prev">Previous</string>
+    <!-- 日历结束 -->
+
+</resources>
