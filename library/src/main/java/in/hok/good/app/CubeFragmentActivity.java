@@ -1,20 +1,17 @@
 package in.hok.good.app;
 
-import in.hok.good.utils.LogManager;
-import in.hok.good.utils.clog.CLog;
 import android.content.Context;
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
+
+import in.hok.good.utils.clog.CLog;
 
 public abstract class CubeFragmentActivity extends FragmentActivity {
 
@@ -23,7 +20,7 @@ public abstract class CubeFragmentActivity extends FragmentActivity {
     public static boolean DEBUG = true;
     protected CubeFragment currentFragment;
     private boolean mCloseWarned;
-    public boolean isBackOtherAsk=false;//返回监听，是否还有其他先行动作
+    public boolean isBackOtherAsk=false;//backButtonListening ,check Advance action
     /**
      * return the string id of close warning
      * <p/>
@@ -158,10 +155,14 @@ public abstract class CubeFragmentActivity extends FragmentActivity {
         if (enableBackPressed) {
             if(isBackOtherAsk)
             {
-                //如果有其他先行动作
+                /**
+                 * 如果有其他先行动作
+                 */
                 if(doOtherBackThing())
                 {
-                    //执行完先行动作，根据需要，判断是否再返回
+                    /**
+                     * 执行完先行动作，根据需要，判断是否再返回
+                     */
                     int cnt = getSupportFragmentManager().getBackStackEntryCount();
                     if (cnt <= 1 && isTaskRoot()) {
                         String closeWarningHint = getCloseWarning();
