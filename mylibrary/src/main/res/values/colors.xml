@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="base_white">#ffffff</color>
+    <color name="base_333333">#333333</color>
+    <color name="base_cccccc">#cccccc</color>
+    <color name="base_666666">#666666</color>
+    <color name="base_999999">#999999</color>
+    <color name="base_f1f1f1">#f1f1f1</color>
+    <color name="base_black">#000000</color>
+    <color name="base_background">#373737</color>
+    <color name="base_font_color">#007edf</color>
+    <color name="base_main_color">#007edf</color>
+    <color name="base_4d90fe">#4d90fe</color>
+
+    <color name="header_bg">#303841</color>
+
+    <color name="recoveryColorPrimary">#F44336</color>
+    <color name="recoveryColorPrimaryDark">#D32F2F</color>
+    <color name="recoveryColorAccent">#BDBDBD</color>
+    <color name="recoveryTextColor">#FFFFFF</color>
+
+    <!-- ios弹框 -->
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="generic_dashedline">#ebebeb</color>
+    <color name="generic_toolbar_bottom">#e631a98d</color>
+
+    <color name="generic_header_bg">#f33535</color>
+</resources>

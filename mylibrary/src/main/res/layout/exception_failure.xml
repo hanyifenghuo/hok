@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|clip_vertical|clip_horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/exception_wrapper"
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" >
+
+            <TextView
+                android:id="@+id/exception_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="错误啦" />
+
+            <TextView
+                android:id="@+id/exception_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发生错误啦，请重试一下" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重试"
+                android:layout_marginTop="10dip"
+                android:background="#0066cc"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="50dip"
+                android:paddingRight="50dip"
+                android:id="@+id/exception_button"
+                android:layout_below="@+id/exception_wrapper"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
