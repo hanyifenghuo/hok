@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|clip_vertical|clip_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <LinearLayout
+            android:id="@+id/exception_wrapper"
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="15dp" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseload_error"/>
+            <TextView
+                android:id="@+id/exception_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="错误啦" />
+
+            <TextView
+                android:id="@+id/exception_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有网络，请打开它" />
+        </LinearLayout>
+        <Button
+            android:layout_width="90dip"
+            android:layout_height="40dip"
+            android:text="重试"
+            android:id="@+id/exception_button"
+            android:layout_below="@+id/exception_wrapper"
+            android:layout_marginTop="10dip"
+            android:textColor="#FFFFFF"
+            android:textSize="18dip"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="#0066cc" />
+    </RelativeLayout>
+
+</RelativeLayout>
